@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "schema": "rapido-result-v1",
+    "captured_at_unix": 1786290948,
+    "cpu_model": "Apple M4 Max",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 14,
+    "cpu_governor": "not-controllable (macOS)",
+    "ram_bytes": 38654705664,
+    "os": "macOS 26.5.2",
+    "kernel": "25.5.0",
+    "arch": "aarch64",
+    "target_triple": "aarch64-apple-darwin",
+    "build_profile": "release",
+    "opt_level": "3",
+    "rustflags": "",
+    "target_cpu": "default",
+    "rustc_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "git_commit": "not-a-git-repo",
+    "git_dirty": "true",
+    "crypto_crate_versions": [
+      [
+        "ark-bls12-381",
+        "0.5.0"
+      ],
+      [
+        "ark-ec",
+        "0.5.0"
+      ],
+      [
+        "ark-ff",
+        "0.5.0"
+      ],
+      [
+        "ark-serialize",
+        "0.5.0"
+      ],
+      [
+        "ark-std",
+        "0.5.0"
+      ],
+      [
+        "blst",
+        "0.3.17"
+      ],
+      [
+        "blstrs",
+        "0.7.1"
+      ],
+      [
+        "ed25519-dalek",
+        "2.2.0"
+      ],
+      [
+        "hkdf",
+        "0.12.4"
+      ],
+      [
+        "num-bigint",
+        "0.4.8"
+      ],
+      [
+        "p256",
+        "0.13.2"
+      ],
+      [
+        "sha2",
+        "0.10.9"
+      ]
+    ],
+    "emulated": false,
+    "profile_label": "p1"
+  },
+  "experiment": "pipeline-breakdown",
+  "data": [
+    {
+      "mode": "mode-a",
+      "escrow": "e0",
+      "path": "naive",
+      "iterations": 1000,
+      "layer1_ms": 1.885542,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.011375,
+      "total_ms": 1.897334,
+      "wallclock_ms": 1.901084,
+      "unattributed_ms": 0.00374999999999992,
+      "presentation_bytes": 296
+    },
+    {
+      "mode": "mode-a",
+      "escrow": "e0",
+      "path": "aggregate",
+      "iterations": 1000,
+      "layer1_ms": 2.119666,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.012208,
+      "total_ms": 2.132084,
+      "wallclock_ms": 2.135958,
+      "unattributed_ms": 0.003874000000000155,
+      "presentation_bytes": 296
+    },
+    {
+      "mode": "mode-a",
+      "escrow": "e1",
+      "path": "naive",
+      "iterations": 1000,
+      "layer1_ms": 1.89875,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.011417,
+      "total_ms": 1.910292,
+      "wallclock_ms": 1.913958,
+      "unattributed_ms": 0.003665999999999947,
+      "presentation_bytes": 392
+    },
+    {
+      "mode": "mode-a",
+      "escrow": "e1",
+      "path": "aggregate",
+      "iterations": 1000,
+      "layer1_ms": 2.119083,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.012208,
+      "total_ms": 2.131374,
+      "wallclock_ms": 2.135125,
+      "unattributed_ms": 0.003750999999999838,
+      "presentation_bytes": 392
+    },
+    {
+      "mode": "mode-a",
+      "escrow": "e2",
+      "path": "naive",
+      "iterations": 1000,
+      "layer1_ms": 1.926,
+      "escrow_ms": 0.665208,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.011458,
+      "total_ms": 2.606876,
+      "wallclock_ms": 2.610417,
+      "unattributed_ms": 0.0035409999999997943,
+      "presentation_bytes": 520
+    },
+    {
+      "mode": "mode-a",
+      "escrow": "e2",
+      "path": "aggregate",
+      "iterations": 1000,
+      "layer1_ms": 2.134708,
+      "escrow_ms": 0.6675,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.012541,
+      "total_ms": 2.819208,
+      "wallclock_ms": 2.823,
+      "unattributed_ms": 0.0037919999999997955,
+      "presentation_bytes": 520
+    },
+    {
+      "mode": "mode-b",
+      "escrow": "e0",
+      "path": "n/a",
+      "iterations": 1000,
+      "layer1_ms": 1.335791,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.001042,
+      "total_ms": 1.336833,
+      "wallclock_ms": 1.3475,
+      "unattributed_ms": 0.010666999999999982,
+      "presentation_bytes": 572
+    },
+    {
+      "mode": "mode-b",
+      "escrow": "e1",
+      "path": "n/a",
+      "iterations": 1000,
+      "layer1_ms": 1.329875,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.001042,
+      "total_ms": 1.330917,
+      "wallclock_ms": 1.34175,
+      "unattributed_ms": 0.010833000000000093,
+      "presentation_bytes": 668
+    },
+    {
+      "mode": "mode-b",
+      "escrow": "e2",
+      "path": "n/a",
+      "iterations": 1000,
+      "layer1_ms": 1.775458,
+      "escrow_ms": 0.0,
+      "revocation_ms": 0.0,
+      "replay_ms": 0.001042,
+      "total_ms": 1.776541,
+      "wallclock_ms": 1.787417,
+      "unattributed_ms": 0.010876000000000108,
+      "presentation_bytes": 700
+    }
+  ]
+}

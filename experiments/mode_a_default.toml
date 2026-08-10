@@ -1,0 +1,14 @@
+# RAPIDO Mode A, in its default configuration.
+#
+# Mode A is issuer-linkable by construction (see rapido-proto::mode_a). Runs
+# with this config measure the cheap-but-linkable end of the tradeoff.
+mode = "a"
+escrow = "e2"
+verify_path = "aggregate"
+n_batch = 100          # the nominal "100 pseudonyms per epoch"
+n_attributes = 8       # unused in Mode A
+n_disclosed = 1        # unused in Mode A
+authority_k = 3
+authority_n = 5
+epoch_secs = 600       # the default 10-minute epoch
+timing_mechanism = "none"

@@ -1,0 +1,591 @@
+{
+  "meta": {
+    "schema": "rapido-result-v1",
+    "captured_at_unix": 1785665270,
+    "cpu_model": "Apple M4 Max",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 14,
+    "cpu_governor": "not-controllable (macOS)",
+    "ram_bytes": 38654705664,
+    "os": "macOS 26.5.2",
+    "kernel": "25.5.0",
+    "arch": "aarch64",
+    "target_triple": "aarch64-apple-darwin",
+    "build_profile": "release",
+    "opt_level": "3",
+    "rustflags": "",
+    "target_cpu": "default",
+    "rustc_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "git_commit": "not-a-git-repo",
+    "git_dirty": "true",
+    "crypto_crate_versions": [
+      [
+        "ark-bls12-381",
+        "0.5.0"
+      ],
+      [
+        "ark-ec",
+        "0.5.0"
+      ],
+      [
+        "ark-ff",
+        "0.5.0"
+      ],
+      [
+        "ark-serialize",
+        "0.5.0"
+      ],
+      [
+        "ark-std",
+        "0.5.0"
+      ],
+      [
+        "blst",
+        "0.3.17"
+      ],
+      [
+        "blstrs",
+        "0.7.1"
+      ],
+      [
+        "ed25519-dalek",
+        "2.2.0"
+      ],
+      [
+        "hkdf",
+        "0.12.4"
+      ],
+      [
+        "num-bigint",
+        "0.4.8"
+      ],
+      [
+        "p256",
+        "0.13.2"
+      ],
+      [
+        "sha2",
+        "0.10.9"
+      ]
+    ],
+    "emulated": false,
+    "profile_label": "p1"
+  },
+  "experiment": "scenario2_metropolitan",
+  "data": {
+    "calibration": {
+      "config": {
+        "mode": "a",
+        "escrow": "e2",
+        "verify_path": "aggregate",
+        "n_batch": 100,
+        "n_attributes": 8,
+        "n_disclosed": 1,
+        "authority_k": 3,
+        "authority_n": 5,
+        "epoch_secs": 600,
+        "timing_mechanism": "none"
+      },
+      "n_samples": 1000,
+      "mean_verify_ns": 2908043.837,
+      "median_verify_ns": 2918667.0,
+      "presentation_bytes": 520,
+      "issuance_download_bytes": 20000,
+      "throughput_per_core_hz": 343.8737708409586
+    },
+    "runs": [
+      {
+        "agents": 1000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 20.966666666666665,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 2.620833333333333,
+        "offered_load_ratio": 0.007621498222804166,
+        "verifier_utilization": 0.007623116141666666,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 2516,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2975743,
+          "p99_ns": 3061759,
+          "p999_ns": 3162111,
+          "max_ns": 3162111,
+          "mean_ns": 2908657.348171701
+        },
+        "completed": 2516,
+        "offered": 2516,
+        "issuance_rate_hz": 1.6666666666666667,
+        "issuance_cpu_load": 0.56987257,
+        "bandwidth": {
+          "presentation_bytes_total": 1308320,
+          "issuance_bytes_total": 6880000,
+          "cover_bytes_total": 0,
+          "total_bytes": 8188320,
+          "aggregate_bps": 68236.0,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 2516,
+            "cover_messages": 0,
+            "genuine_bytes": 1308320,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 1
+      },
+      {
+        "agents": 1000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 20.9,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 2.6125,
+        "offered_load_ratio": 0.007597264524162499,
+        "verifier_utilization": 0.007595901063541666,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 2508,
+          "min_ns": 2646016,
+          "p50_ns": 2918399,
+          "p90_ns": 2971647,
+          "p99_ns": 3022847,
+          "p999_ns": 3108863,
+          "max_ns": 3145727,
+          "mean_ns": 2907507.547049444
+        },
+        "completed": 2508,
+        "offered": 2508,
+        "issuance_rate_hz": 1.6666666666666667,
+        "issuance_cpu_load": 0.56987257,
+        "bandwidth": {
+          "presentation_bytes_total": 1304160,
+          "issuance_bytes_total": 6880000,
+          "cover_bytes_total": 0,
+          "total_bytes": 8184160,
+          "aggregate_bps": 68201.33333333333,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 2508,
+            "cover_messages": 0,
+            "genuine_bytes": 1304160,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 2
+      },
+      {
+        "agents": 1000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 20.9,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 2.6125,
+        "offered_load_ratio": 0.007597264524162499,
+        "verifier_utilization": 0.0075976438625,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 2508,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2971647,
+          "p99_ns": 3031039,
+          "p999_ns": 3104767,
+          "max_ns": 3162111,
+          "mean_ns": 2908155.917065391
+        },
+        "completed": 2508,
+        "offered": 2508,
+        "issuance_rate_hz": 1.6666666666666667,
+        "issuance_cpu_load": 0.56987257,
+        "bandwidth": {
+          "presentation_bytes_total": 1304160,
+          "issuance_bytes_total": 6880000,
+          "cover_bytes_total": 0,
+          "total_bytes": 8184160,
+          "aggregate_bps": 68201.33333333333,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 2508,
+            "cover_messages": 0,
+            "genuine_bytes": 1304160,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 3
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 210.175,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.271875,
+        "offered_load_ratio": 0.07640279339251459,
+        "verifier_utilization": 0.07641006895833333,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25221,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2971647,
+          "p99_ns": 3031039,
+          "p999_ns": 3162111,
+          "max_ns": 3162111,
+          "mean_ns": 2908414.447008447
+        },
+        "completed": 25221,
+        "offered": 25222,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13115440,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 0,
+          "total_bytes": 81915440,
+          "aggregate_bps": 682628.6666666666,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25222,
+            "cover_messages": 0,
+            "genuine_bytes": 13115440,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 1
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 209.69166666666666,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.211458333333333,
+        "offered_load_ratio": 0.07622406986503229,
+        "verifier_utilization": 0.07623804396458334,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25163,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2971647,
+          "p99_ns": 3041279,
+          "p999_ns": 3145727,
+          "max_ns": 3162111,
+          "mean_ns": 2908559.6623614025
+        },
+        "completed": 25163,
+        "offered": 25163,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13084760,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 0,
+          "total_bytes": 81884760,
+          "aggregate_bps": 682373.0,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25163,
+            "cover_messages": 0,
+            "genuine_bytes": 13084760,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 2
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 210.175,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.271875,
+        "offered_load_ratio": 0.07640582260484478,
+        "verifier_utilization": 0.076385380409375,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25221,
+          "min_ns": 2646016,
+          "p50_ns": 2918399,
+          "p90_ns": 2971647,
+          "p99_ns": 3045375,
+          "p999_ns": 3162111,
+          "max_ns": 3162111,
+          "mean_ns": 2907482.6520756516
+        },
+        "completed": 25221,
+        "offered": 25223,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13115960,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 0,
+          "total_bytes": 81915960,
+          "aggregate_bps": 682633.0,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25223,
+            "cover_messages": 0,
+            "genuine_bytes": 13115960,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 3
+      },
+      {
+        "agents": 100000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 2101.375,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 262.671875,
+        "offered_load_ratio": 0.763870414883975,
+        "verifier_utilization": 0.7638684264416666,
+        "max_queue_depth": 3109,
+        "latency": {
+          "count": 252165,
+          "min_ns": 2646016,
+          "p50_ns": 2979839,
+          "p90_ns": 217448447,
+          "p99_ns": 1041760255,
+          "p999_ns": 1120927743,
+          "max_ns": 1133510655,
+          "mean_ns": 72837567.05712529
+        },
+        "completed": 252165,
+        "offered": 252168,
+        "issuance_rate_hz": 166.66666666666669,
+        "issuance_cpu_load": 56.987257000000014,
+        "bandwidth": {
+          "presentation_bytes_total": 131127360,
+          "issuance_bytes_total": 688000000,
+          "cover_bytes_total": 0,
+          "total_bytes": 819127360,
+          "aggregate_bps": 6826061.333333333,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 252168,
+            "cover_messages": 0,
+            "genuine_bytes": 131127360,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 1
+      },
+      {
+        "agents": 100000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 2101.025,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 262.628125,
+        "offered_load_ratio": 0.7637462171784365,
+        "verifier_utilization": 0.7637411938427083,
+        "max_queue_depth": 2992,
+        "latency": {
+          "count": 252123,
+          "min_ns": 2646016,
+          "p50_ns": 2977791,
+          "p90_ns": 176291839,
+          "p99_ns": 980942847,
+          "p999_ns": 1076887551,
+          "max_ns": 1090519039,
+          "mean_ns": 64301336.79653198
+        },
+        "completed": 252123,
+        "offered": 252127,
+        "issuance_rate_hz": 166.66666666666669,
+        "issuance_cpu_load": 56.987257000000014,
+        "bandwidth": {
+          "presentation_bytes_total": 131106040,
+          "issuance_bytes_total": 688000000,
+          "cover_bytes_total": 0,
+          "total_bytes": 819106040,
+          "aggregate_bps": 6825883.666666667,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 252127,
+            "cover_messages": 0,
+            "genuine_bytes": 131106040,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 2
+      },
+      {
+        "agents": 100000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 2101.2166666666667,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 262.65208333333334,
+        "offered_load_ratio": 0.7638219474866917,
+        "verifier_utilization": 0.7638528227375,
+        "max_queue_depth": 3071,
+        "latency": {
+          "count": 252146,
+          "min_ns": 2646016,
+          "p50_ns": 2979839,
+          "p90_ns": 190316543,
+          "p99_ns": 975699967,
+          "p999_ns": 1106247679,
+          "max_ns": 1119879167,
+          "mean_ns": 65449485.68603915
+        },
+        "completed": 252146,
+        "offered": 252152,
+        "issuance_rate_hz": 166.66666666666669,
+        "issuance_cpu_load": 56.987257000000014,
+        "bandwidth": {
+          "presentation_bytes_total": 131119040,
+          "issuance_bytes_total": 688000000,
+          "cover_bytes_total": 0,
+          "total_bytes": 819119040,
+          "aggregate_bps": 6825992.0,
+          "cover_overhead_pct": 0.0,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 252152,
+            "cover_messages": 0,
+            "genuine_bytes": 131119040,
+            "cover_bytes": 0
+          }
+        },
+        "seed": 3
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 209.9,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.2375,
+        "offered_load_ratio": 0.0762998001732875,
+        "verifier_utilization": 0.076313339584375,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25188,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2971647,
+          "p99_ns": 3045375,
+          "p999_ns": 3162111,
+          "max_ns": 3162111,
+          "mean_ns": 2908547.3539780863
+        },
+        "completed": 25188,
+        "offered": 25188,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13097760,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 31200000,
+          "total_bytes": 113097760,
+          "aggregate_bps": 942481.3333333334,
+          "cover_overhead_pct": 238.20867079561697,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25188,
+            "cover_messages": 60000,
+            "genuine_bytes": 13097760,
+            "cover_bytes": 31200000
+          }
+        },
+        "seed": 500
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 210.46666666666667,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.308333333333334,
+        "offered_load_ratio": 0.07650578661174166,
+        "verifier_utilization": 0.07649679416979166,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25256,
+          "min_ns": 2646016,
+          "p50_ns": 2918399,
+          "p90_ns": 2971647,
+          "p99_ns": 3045375,
+          "p999_ns": 3162111,
+          "max_ns": 3162111,
+          "mean_ns": 2907690.3287931597
+        },
+        "completed": 25256,
+        "offered": 25256,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13133120,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 31200000,
+          "total_bytes": 113133120,
+          "aggregate_bps": 942776.0,
+          "cover_overhead_pct": 237.56731073804244,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25256,
+            "cover_messages": 60000,
+            "genuine_bytes": 13133120,
+            "cover_bytes": 31200000
+          }
+        },
+        "seed": 501
+      },
+      {
+        "agents": 10000,
+        "cores": 8,
+        "duration_secs": 120,
+        "achieved_throughput_hz": 210.44166666666666,
+        "analytic_ceiling_hz": 2750.990166727669,
+        "throughput_per_core_hz": 26.305208333333333,
+        "offered_load_ratio": 0.07649669897475103,
+        "verifier_utilization": 0.076490993946875,
+        "max_queue_depth": 0,
+        "latency": {
+          "count": 25253,
+          "min_ns": 2646016,
+          "p50_ns": 2920447,
+          "p90_ns": 2971647,
+          "p99_ns": 3045375,
+          "p999_ns": 3145727,
+          "max_ns": 3162111,
+          "mean_ns": 2907816.74731715
+        },
+        "completed": 25253,
+        "offered": 25253,
+        "issuance_rate_hz": 16.666666666666668,
+        "issuance_cpu_load": 5.698725700000001,
+        "bandwidth": {
+          "presentation_bytes_total": 13131560,
+          "issuance_bytes_total": 68800000,
+          "cover_bytes_total": 31200000,
+          "total_bytes": 113131560,
+          "aggregate_bps": 942763.0,
+          "cover_overhead_pct": 237.59553320397578,
+          "cover": {
+            "window_ns": 120000000000,
+            "genuine_messages": 25253,
+            "cover_messages": 60000,
+            "genuine_bytes": 13131560,
+            "cover_bytes": 31200000
+          }
+        },
+        "seed": 502
+      }
+    ]
+  }
+}

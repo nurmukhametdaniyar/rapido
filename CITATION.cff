@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or its measurements, please cite it as below."
+title: "RAPIDO reference implementation"
+abstract: >-
+  A measured, reproducible Rust reference implementation of the layered RAPIDO
+  architecture for accountable anonymous authentication, together with mTLS,
+  SCMS (explicit and implicit/ECQV) and Idemix-like CL-RSA baselines and a set
+  of adversarial experiments. Every reported number is produced by running this
+  code on a recorded machine, from a committed result file.
+type: software
+authors:
+  - family-names: "Nurmukhamet"
+    given-names: "Daniyar"
+    orcid: "https://orcid.org/0009-0000-8551-389X"
+    email: "nurmukhametdaniyar@gmail.com"
+    affiliation: "D. Serikbayev East Kazakhstan Technical University"
+repository-code: "https://github.com/nurmukhametdaniyar/rapido"
+license: "MIT OR Apache-2.0"
+keywords:
+  - anonymous authentication
+  - anonymous credentials
+  - BBS+
+  - BLS12-381
+  - threshold escrow
+  - differential privacy
+  - V2X
+  - reference implementation

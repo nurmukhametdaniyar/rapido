@@ -1,0 +1,639 @@
+{
+  "meta": {
+    "schema": "rapido-result-v1",
+    "captured_at_unix": 1785665278,
+    "cpu_model": "Apple M4 Max",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 14,
+    "cpu_governor": "not-controllable (macOS)",
+    "ram_bytes": 38654705664,
+    "os": "macOS 26.5.2",
+    "kernel": "25.5.0",
+    "arch": "aarch64",
+    "target_triple": "aarch64-apple-darwin",
+    "build_profile": "release",
+    "opt_level": "3",
+    "rustflags": "",
+    "target_cpu": "default",
+    "rustc_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "git_commit": "not-a-git-repo",
+    "git_dirty": "true",
+    "crypto_crate_versions": [
+      [
+        "ark-bls12-381",
+        "0.5.0"
+      ],
+      [
+        "ark-ec",
+        "0.5.0"
+      ],
+      [
+        "ark-ff",
+        "0.5.0"
+      ],
+      [
+        "ark-serialize",
+        "0.5.0"
+      ],
+      [
+        "ark-std",
+        "0.5.0"
+      ],
+      [
+        "blst",
+        "0.3.17"
+      ],
+      [
+        "blstrs",
+        "0.7.1"
+      ],
+      [
+        "ed25519-dalek",
+        "2.2.0"
+      ],
+      [
+        "hkdf",
+        "0.12.4"
+      ],
+      [
+        "num-bigint",
+        "0.4.8"
+      ],
+      [
+        "p256",
+        "0.13.2"
+      ],
+      [
+        "sha2",
+        "0.10.9"
+      ]
+    ],
+    "emulated": false,
+    "profile_label": "p1"
+  },
+  "experiment": "attack_linkability",
+  "data": {
+    "runs": [
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4972
+        },
+        "seed": 1
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 1
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4972
+        },
+        "seed": 1
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4948
+        },
+        "seed": 1
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4986
+        },
+        "seed": 2
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 2
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4986
+        },
+        "seed": 2
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4964
+        },
+        "seed": 2
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4906
+        },
+        "seed": 3
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 3
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4906
+        },
+        "seed": 3
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4896
+        },
+        "seed": 3
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4926
+        },
+        "seed": 4
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 4
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4926
+        },
+        "seed": 4
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5032
+        },
+        "seed": 4
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5042
+        },
+        "seed": 5
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 5
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5042
+        },
+        "seed": 5
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.503
+        },
+        "seed": 5
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4936
+        },
+        "seed": 6
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 6
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4936
+        },
+        "seed": 6
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.508
+        },
+        "seed": 6
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4964
+        },
+        "seed": 7
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 7
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4964
+        },
+        "seed": 7
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.509
+        },
+        "seed": 7
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.496
+        },
+        "seed": 8
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 8
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.496
+        },
+        "seed": 8
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.4978
+        },
+        "seed": 8
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5088
+        },
+        "seed": 9
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 9
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5088
+        },
+        "seed": 9
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.516
+        },
+        "seed": 9
+      },
+      {
+        "mode": "a",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.497
+        },
+        "seed": 10
+      },
+      {
+        "mode": "a",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 1.0,
+          "false_positive_rate": 0.0,
+          "advantage": 1.0,
+          "accuracy": 1.0
+        },
+        "seed": 10
+      },
+      {
+        "mode": "b",
+        "adversary": "verifier-only",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.497
+        },
+        "seed": 10
+      },
+      {
+        "mode": "b",
+        "adversary": "issuer-colluding",
+        "agents": 25,
+        "sessions_per_agent": 6,
+        "result": {
+          "trials": 5000,
+          "true_positive_rate": 0.0,
+          "false_positive_rate": 0.0,
+          "advantage": 0.0,
+          "accuracy": 0.5044
+        },
+        "seed": 10
+      }
+    ]
+  }
+}

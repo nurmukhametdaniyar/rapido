@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "schema": "rapido-result-v1",
+    "captured_at_unix": 1785665286,
+    "cpu_model": "Apple M4 Max",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 14,
+    "cpu_governor": "not-controllable (macOS)",
+    "ram_bytes": 38654705664,
+    "os": "macOS 26.5.2",
+    "kernel": "25.5.0",
+    "arch": "aarch64",
+    "target_triple": "aarch64-apple-darwin",
+    "build_profile": "release",
+    "opt_level": "3",
+    "rustflags": "",
+    "target_cpu": "default",
+    "rustc_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "git_commit": "not-a-git-repo",
+    "git_dirty": "true",
+    "crypto_crate_versions": [
+      [
+        "ark-bls12-381",
+        "0.5.0"
+      ],
+      [
+        "ark-ec",
+        "0.5.0"
+      ],
+      [
+        "ark-ff",
+        "0.5.0"
+      ],
+      [
+        "ark-serialize",
+        "0.5.0"
+      ],
+      [
+        "ark-std",
+        "0.5.0"
+      ],
+      [
+        "blst",
+        "0.3.17"
+      ],
+      [
+        "blstrs",
+        "0.7.1"
+      ],
+      [
+        "ed25519-dalek",
+        "2.2.0"
+      ],
+      [
+        "hkdf",
+        "0.12.4"
+      ],
+      [
+        "num-bigint",
+        "0.4.8"
+      ],
+      [
+        "p256",
+        "0.13.2"
+      ],
+      [
+        "sha2",
+        "0.10.9"
+      ]
+    ],
+    "emulated": false,
+    "profile_label": "p1"
+  },
+  "experiment": "attack_cover",
+  "data": {
+    "presentation_bytes": 520,
+    "results": [
+      {
+        "cover_rate_hz": 0.0,
+        "auc": 1.0,
+        "advantage": 1.0,
+        "bandwidth_overhead_pct": 0.0,
+        "mean_total_bytes": 5239.52,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 0.5,
+        "auc": 0.9999275,
+        "advantage": 0.9998549999999999,
+        "bandwidth_overhead_pct": 51.20092262949406,
+        "mean_total_bytes": 7840.04,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 1.0,
+        "auc": 0.9991005,
+        "advantage": 0.9982009999999999,
+        "bandwidth_overhead_pct": 101.15656135783307,
+        "mean_total_bytes": 10446.02,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 2.0,
+        "auc": 0.994916,
+        "advantage": 0.989832,
+        "bandwidth_overhead_pct": 199.56467350512884,
+        "mean_total_bytes": 15565.68,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 5.0,
+        "auc": 0.96855,
+        "advantage": 0.9371,
+        "bandwidth_overhead_pct": 505.74573361607594,
+        "mean_total_bytes": 31193.24,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 10.0,
+        "auc": 0.927105,
+        "advantage": 0.8542099999999999,
+        "bandwidth_overhead_pct": 1004.2978936810431,
+        "mean_total_bytes": 57251.22,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 25.0,
+        "auc": 0.8222745,
+        "advantage": 0.644549,
+        "bandwidth_overhead_pct": 2485.475942201698,
+        "mean_total_bytes": 135379.14,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 50.0,
+        "auc": 0.739169,
+        "advantage": 0.47833799999999993,
+        "bandwidth_overhead_pct": 5024.632223728473,
+        "mean_total_bytes": 265374.98,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 100.0,
+        "auc": 0.663975,
+        "advantage": 0.32794999999999996,
+        "bandwidth_overhead_pct": 9987.645443196005,
+        "mean_total_bytes": 525213.26,
+        "trials": 1000,
+        "seed": 1
+      },
+      {
+        "cover_rate_hz": 200.0,
+        "auc": 0.628541,
+        "advantage": 0.25708200000000003,
+        "bandwidth_overhead_pct": 20077.564746034932,
+        "mean_total_bytes": 1045246.28,
+        "trials": 1000,
+        "seed": 1
+      }
+    ]
+  }
+}

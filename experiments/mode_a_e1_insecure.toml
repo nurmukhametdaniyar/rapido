@@ -1,0 +1,17 @@
+# Mode A with escrow variant E1 — the configuration the RAPIDO paper as
+# currently written specifies.
+#
+# E1 attaches an identity ciphertext and never checks it. A malicious agent
+# encrypts garbage, stays anonymous, and defeats accountability entirely.
+# This config exists ONLY so E1's cost can be measured as the floor that E2 is
+# compared against. It must never be presented as deployable.
+mode = "a"
+escrow = "e1"
+verify_path = "aggregate"
+n_batch = 100
+n_attributes = 8
+n_disclosed = 1
+authority_k = 3
+authority_n = 5
+epoch_secs = 600
+timing_mechanism = "none"

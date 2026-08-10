@@ -1,0 +1,35 @@
+[package]
+name = "rapido-crypto"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rapido-core = { workspace = true }
+ark-bls12-381 = { workspace = true }
+ark-ec = { workspace = true }
+ark-ff = { workspace = true }
+ark-serialize = { workspace = true }
+ark-std = { workspace = true }
+sha2 = { workspace = true }
+hkdf = { workspace = true }
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+rand_core = { workspace = true }
+serde = { workspace = true }
+hex = { workspace = true }
+blstrs = { workspace = true, optional = true }
+group = { workspace = true, optional = true }
+ff = { workspace = true, optional = true }
+pairing = { workspace = true, optional = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+serde_json = { workspace = true }
+
+[features]
+default = []
+# Secondary BLS backend for the raw sign/verify fast path, so the library
+# dependence of the reported latencies is measurable. Off by default.
+blst-backend = ["dep:blstrs", "dep:group", "dep:ff", "dep:pairing"]

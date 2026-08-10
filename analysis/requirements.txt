@@ -1,0 +1,7 @@
+matplotlib>=3.7
+pandas>=2.0
+numpy>=1.24
+# Optional: enables the learned-classifier attack in attack_classifier.py.
+# Without it that attack is skipped, and the script says so rather than
+# silently reporting the weaker attacks as the only ones tried.
+scikit-learn>=1.3

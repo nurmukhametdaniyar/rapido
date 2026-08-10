@@ -1,0 +1,24 @@
+[package]
+name = "rapido-sim"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rapido-core = { workspace = true }
+rapido-crypto = { workspace = true }
+rapido-proto = { workspace = true }
+rapido-privacy = { workspace = true }
+rapido-baselines = { workspace = true }
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+rand_distr = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+hdrhistogram = { workspace = true }
+statrs = { workspace = true }
+toml = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }

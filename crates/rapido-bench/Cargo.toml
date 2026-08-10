@@ -1,0 +1,35 @@
+[package]
+name = "rapido-bench"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rapido-core = { workspace = true }
+rapido-crypto = { workspace = true }
+rapido-proto = { workspace = true }
+rapido-privacy = { workspace = true }
+rapido-baselines = { workspace = true }
+rand = { workspace = true }
+num-bigint = { workspace = true }
+sha2 = { workspace = true }
+
+[dev-dependencies]
+criterion = { workspace = true }
+
+[features]
+default = []
+blst-backend = ["rapido-crypto/blst-backend"]
+
+[[bench]]
+name = "layer1"
+harness = false
+
+[[bench]]
+name = "layer3"
+harness = false
+
+[[bench]]
+name = "baselines"
+harness = false

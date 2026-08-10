@@ -1,0 +1,13 @@
+# One-minute epochs: fast revocation, at the cost of ten times the issuance
+# load and a much higher chance that a connectivity outage strands an agent.
+# Pair with `rapido-cli sim --scenario 3` to see both sides.
+mode = "a"
+escrow = "e2"
+verify_path = "aggregate"
+n_batch = 20
+n_attributes = 8
+n_disclosed = 1
+authority_k = 3
+authority_n = 5
+epoch_secs = 60
+timing_mechanism = "none"

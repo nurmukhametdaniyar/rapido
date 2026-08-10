@@ -1,0 +1,300 @@
+{
+  "meta": {
+    "schema": "rapido-result-v1",
+    "captured_at_unix": 1786329002,
+    "cpu_model": "Apple M4 Max",
+    "cpu_cores_physical": 14,
+    "cpu_cores_logical": 14,
+    "cpu_governor": "not-controllable (macOS)",
+    "ram_bytes": 38654705664,
+    "os": "macOS 26.5.2",
+    "kernel": "25.5.0",
+    "arch": "aarch64",
+    "target_triple": "aarch64-apple-darwin",
+    "build_profile": "release",
+    "opt_level": "3",
+    "rustflags": "",
+    "target_cpu": "default",
+    "rustc_version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "git_commit": "not-a-git-repo",
+    "git_dirty": "true",
+    "crypto_crate_versions": [
+      [
+        "ark-bls12-381",
+        "0.5.0"
+      ],
+      [
+        "ark-ec",
+        "0.5.0"
+      ],
+      [
+        "ark-ff",
+        "0.5.0"
+      ],
+      [
+        "ark-serialize",
+        "0.5.0"
+      ],
+      [
+        "ark-std",
+        "0.5.0"
+      ],
+      [
+        "blst",
+        "0.3.17"
+      ],
+      [
+        "blstrs",
+        "0.7.1"
+      ],
+      [
+        "ed25519-dalek",
+        "2.2.0"
+      ],
+      [
+        "hkdf",
+        "0.12.4"
+      ],
+      [
+        "num-bigint",
+        "0.4.8"
+      ],
+      [
+        "p256",
+        "0.13.2"
+      ],
+      [
+        "sha2",
+        "0.10.9"
+      ]
+    ],
+    "emulated": false,
+    "profile_label": "p1"
+  },
+  "experiment": "wire_breakdown",
+  "data": {
+    "mode_a_e0": {
+      "label": "Mode A presentation",
+      "escrow": "e0",
+      "fields": [
+        {
+          "name": "cert.P_i",
+          "kind": "G1 compressed (one-time public key)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.epoch",
+          "kind": "u64 big-endian",
+          "bytes": 8,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.attr_commitment",
+          "kind": "G1 compressed (Pedersen commitment to identity)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.sig",
+          "kind": "G2 compressed (threshold BLS over the certificate)",
+          "bytes": 96,
+          "escrow_only": false
+        },
+        {
+          "name": "sigma",
+          "kind": "G2 compressed (one-time key over the challenge)",
+          "bytes": 96,
+          "escrow_only": false
+        }
+      ],
+      "total_bytes": 296,
+      "reported_by_size_bytes": 296,
+      "agrees": true
+    },
+    "mode_a_e2": {
+      "label": "Mode A presentation",
+      "escrow": "e2",
+      "fields": [
+        {
+          "name": "cert.P_i",
+          "kind": "G1 compressed (one-time public key)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.epoch",
+          "kind": "u64 big-endian",
+          "bytes": 8,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.attr_commitment",
+          "kind": "G1 compressed (Pedersen commitment to identity)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "cert.sig",
+          "kind": "G2 compressed (threshold BLS over the certificate)",
+          "bytes": 96,
+          "escrow_only": false
+        },
+        {
+          "name": "sigma",
+          "kind": "G2 compressed (one-time key over the challenge)",
+          "bytes": 96,
+          "escrow_only": false
+        },
+        {
+          "name": "escrow.ct.R",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": true
+        },
+        {
+          "name": "escrow.ct.C",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": true
+        },
+        {
+          "name": "escrow.proof.challenge",
+          "kind": "Fr scalar",
+          "bytes": 32,
+          "escrow_only": true
+        },
+        {
+          "name": "escrow.proof.responses[3]",
+          "kind": "Fr scalars (id, r, blinding)",
+          "bytes": 96,
+          "escrow_only": true
+        }
+      ],
+      "total_bytes": 520,
+      "reported_by_size_bytes": 520,
+      "agrees": true
+    },
+    "mode_a_e2_delta_bytes": 224,
+    "mode_b_e0": {
+      "label": "Mode B presentation (L=8, all attributes hidden)",
+      "escrow": "e0",
+      "fields": [
+        {
+          "name": "bbs.A'",
+          "kind": "G1 compressed (re-randomized signature)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.A_bar",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.d",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.proof.challenge",
+          "kind": "Fr scalar (Fiat-Shamir)",
+          "bytes": 32,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.proof.responses[11]",
+          "kind": "Fr scalars (e, r2, r3, s', one per hidden attribute, +1 under E2)",
+          "bytes": 352,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.disclosed[1]",
+          "kind": "u32 index + Fr value per disclosed attribute",
+          "bytes": 36,
+          "escrow_only": false
+        },
+        {
+          "name": "epoch",
+          "kind": "u64 big-endian",
+          "bytes": 8,
+          "escrow_only": false
+        }
+      ],
+      "total_bytes": 572,
+      "reported_by_size_bytes": 572,
+      "agrees": true
+    },
+    "mode_b_e2": {
+      "label": "Mode B presentation (L=8, all attributes hidden)",
+      "escrow": "e2",
+      "fields": [
+        {
+          "name": "bbs.A'",
+          "kind": "G1 compressed (re-randomized signature)",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.A_bar",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.d",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.proof.challenge",
+          "kind": "Fr scalar (Fiat-Shamir)",
+          "bytes": 32,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.proof.responses[12]",
+          "kind": "Fr scalars (e, r2, r3, s', one per hidden attribute, +1 under E2)",
+          "bytes": 384,
+          "escrow_only": false
+        },
+        {
+          "name": "bbs.disclosed[1]",
+          "kind": "u32 index + Fr value per disclosed attribute",
+          "bytes": 36,
+          "escrow_only": false
+        },
+        {
+          "name": "epoch",
+          "kind": "u64 big-endian",
+          "bytes": 8,
+          "escrow_only": false
+        },
+        {
+          "name": "escrow.ct.R",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": true
+        },
+        {
+          "name": "escrow.ct.C",
+          "kind": "G1 compressed",
+          "bytes": 48,
+          "escrow_only": true
+        }
+      ],
+      "total_bytes": 700,
+      "reported_by_size_bytes": 700,
+      "agrees": true
+    },
+    "mode_b_e2_delta_bytes": 128,
+    "mode_b_proof_is_shared": true,
+    "mode_b_shared_proof_evidence": "E0 presentation carries 11 Schnorr responses; E2 carries 12. The escrow attachment under E2 is `ProvenInPresentation`, which holds only the ciphertext. The escrow statement is therefore proved by the same Fiat-Shamir challenge as the credential, costing exactly 1 extra response scalar(s) = 32 B, plus the 96 B ciphertext.",
+    "notes": [
+      "Every breakdown agrees with the protocol's own size_bytes()."
+    ]
+  }
+}

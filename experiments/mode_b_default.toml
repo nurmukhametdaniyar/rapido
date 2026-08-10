@@ -1,0 +1,14 @@
+# RAPIDO Mode B: BBS+ with selective disclosure. Issuer-unlinkable.
+#
+# The issuer-unlinkable configuration. Its cost relative to
+# mode_a_default.toml is the answer to "what does issuer-unlinkability cost?"
+mode = "b"
+escrow = "e2"
+verify_path = "aggregate"   # unused in Mode B
+n_batch = 1                 # unused in Mode B
+n_attributes = 8
+n_disclosed = 1
+authority_k = 1             # see LIMITATIONS.md: Mode B issues from one authority
+authority_n = 1
+epoch_secs = 600
+timing_mechanism = "none"

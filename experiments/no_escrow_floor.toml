@@ -1,0 +1,12 @@
+# The latency floor: no escrow, no timing defence. Establishes what Layer 1
+# alone costs, so the Layer 2 and Layer 3 additions can be attributed.
+mode = "a"
+escrow = "e0"
+verify_path = "aggregate"
+n_batch = 100
+n_attributes = 8
+n_disclosed = 1
+authority_k = 3
+authority_n = 5
+epoch_secs = 600
+timing_mechanism = "none"

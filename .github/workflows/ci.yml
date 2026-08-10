@@ -1,0 +1,70 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Format
+        run: cargo fmt --all --check
+
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Tests
+        run: cargo test --workspace
+
+      # The second backend is feature-gated, so it needs its own run. This is
+      # what catches a divergence between arkworks and blst.
+      - name: Cross-backend agreement
+        run: cargo test -p rapido-crypto --features blst-backend
+
+      - name: Benches compile
+        run: cargo check -p rapido-bench --benches
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install cargo-audit
+        run: cargo install cargo-audit --locked
+      - name: Audit
+        run: cargo audit
+
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install analysis dependencies
+        run: pip install -r analysis/requirements.txt
+
+      # Smoke test only. --quick results are not citable, and the CLI says so.
+      - name: Smoke-test the experiment pipeline
+        run: |
+          cargo run --release -p rapido-cli -- bench --quick --out /tmp/results/p1
+          cargo run --release -p rapido-cli -- sim --scenario 4 --quick --out /tmp/results/p1
+          cargo run --release -p rapido-cli -- attack --target cover --quick --out /tmp/results/p1
+
+      - name: Analysis scripts run on committed results
+        run: |
+          python analysis/gen_tables.py
+          for f in analysis/fig_*.py; do python "$f"; done
