@@ -8,6 +8,8 @@ abstract: >-
   of adversarial experiments. Every reported number is produced by running this
   code on a recorded machine, from a committed result file.
 type: software
+version: 0.1.0
+date-released: "2026-08-10"
 authors:
   - family-names: "Nurmukhamet"
     given-names: "Daniyar"
@@ -15,9 +17,10 @@ authors:
     email: "nurmukhametdaniyar@gmail.com"
     affiliation: "D. Serikbayev East Kazakhstan Technical University"
 repository-code: "https://github.com/nurmukhametdaniyar/rapido"
-license:
-  - MIT
-  - Apache-2.0
+# The project is dual-licensed "MIT OR Apache-2.0" (see LICENSE-MIT and
+# LICENSE-APACHE). Zenodo only accepts a single SPDX identifier string here,
+# so the more restrictive of the two is recorded.
+license: Apache-2.0
 keywords:
   - anonymous authentication
   - anonymous credentials
