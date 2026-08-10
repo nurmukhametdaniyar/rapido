@@ -1,8 +1,14 @@
 # RAPIDO reference implementation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21875222.svg)](https://doi.org/10.5281/zenodo.21875222)
+
 A measured, reproducible implementation of the RAPIDO protocol. Every number it
 reports is produced by running this code, on a recorded machine, from a
 committed result file — none is projected, estimated, or quoted.
+
+Archived at [10.5281/zenodo.21875222](https://doi.org/10.5281/zenodo.21875222),
+which always resolves to the latest version. Cite that DOI rather than a
+per-version one unless you need to pin an exact snapshot.
 
 **The purpose of this codebase is to find out whether RAPIDO works. It is not to
 demonstrate that it does.** `FINDINGS.md` records where the measurements landed,

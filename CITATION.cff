@@ -17,6 +17,14 @@ authors:
     email: "nurmukhametdaniyar@gmail.com"
     affiliation: "D. Serikbayev East Kazakhstan Technical University"
 repository-code: "https://github.com/nurmukhametdaniyar/rapido"
+doi: 10.5281/zenodo.21875222
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21875222
+    description: Concept DOI, always resolving to the latest archived version.
+  - type: doi
+    value: 10.5281/zenodo.21875223
+    description: Archived snapshot of version v0.1.0.
 # The project is dual-licensed "MIT OR Apache-2.0" (see LICENSE-MIT and
 # LICENSE-APACHE). Zenodo only accepts a single SPDX identifier string here,
 # so the more restrictive of the two is recorded.
