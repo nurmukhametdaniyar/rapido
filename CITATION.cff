@@ -15,7 +15,9 @@ authors:
     email: "nurmukhametdaniyar@gmail.com"
     affiliation: "D. Serikbayev East Kazakhstan Technical University"
 repository-code: "https://github.com/nurmukhametdaniyar/rapido"
-license: "MIT OR Apache-2.0"
+license:
+  - MIT
+  - Apache-2.0
 keywords:
   - anonymous authentication
   - anonymous credentials
